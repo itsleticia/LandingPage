@@ -1,0 +1,215 @@
+:root{
+    --main-text-color: #1b1b1b ;
+    --details-color: #ae705d;
+    --main-bg-color: #fde7ce;
+    --dark: #2b2b2b;
+    --rose: #d39b8a;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    text-align: justify;
+    box-sizing: border-box;
+}
+.topo, header{
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width:7%;
+}
+.logo img{
+    width: 3.5rem;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    margin-top: 1%;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-right: 12px;
+    display: inline-flex;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+    color: var(--details-color);
+}
+.login-area{
+    margin-left: auto;
+    
+    
+}
+.login-area ul li a:hover{
+    text-decoration: none;
+}
+.register{
+    border: 1px solid var(--main-text-color);
+    border-radius: 5px;
+    padding: 0px 10px;
+    
+}
+
+.register:hover{
+    text-decoration: none;
+    color: var(--details-color);
+    border: 1px solid var(--details-color);
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.banner img{
+    width: 50vw;
+
+}
+.banner-content{
+    margin-top: 5%;
+}
+.banner-content p{
+    text-align: justify;
+    width: 40vw;
+
+}
+
+.btn-primary{
+    background-color: var(--details-color);
+    font-size: 0.7em;
+    border: none;
+
+}
+.btn-primary:hover{
+    background-color: var(--rose);
+    
+}
+.btn-link{
+    color: var(--main-text-color);
+    font-size: 0.7em;
+    
+}
+.btn-link:hover{
+    color: var(--details-color);
+    text-decoration: underline;
+}
+h2{
+    padding-top: 3%;
+    color: var(--dark);
+    font-size: 1.6em;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* BENEFITS */
+.container-benefits{
+    display: flex;
+}
+
+.image-benefit{
+    width: 35vw;
+    height: 70vh;
+    margin-right: 3%;
+    
+}
+.benefit h5{
+    font-style: italic;
+    font-size: 0.9em;
+}
+.benefit p{
+    font-size: 0.7em;
+    width: 35vw;
+}
+/* DEPOIMENTS */
+.cards{
+    display: grid;
+    grid-template-columns:repeat(4, 3fr) ;
+
+}
+.card{
+    margin: 10px 10px 10px 0px;
+    border: 1px solid var(--rose);
+    padding: 5px;
+}
+.card img{
+    padding-top: 5%;
+}
+.card-body h6{
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+}
+.card-text{
+    text-align: justify;
+    font-size: 0.7em;
+    font-style: italic;
+}
+/*ABOUT US*/
+#about-us{
+    width: 40vw;
+}
+#about-us p{
+    font-size: 0.8em;
+}
+/*CONTACT US*/
+#contact-us{
+    width: 40vw;
+}
+.contact-form label{
+    display: flex;
+    font-size: 0.8em;
+}
+.form-control{
+    width: 30vw;
+}
+.contact-form #name, 
+.contact-form #email{
+    height: 1.6em; 
+}
+.btn-dark{
+    margin-top: 3%;
+    font-size: 0.7em;
+    background-color: var(--dark);
+}
+
+/*FOOTER*/
+footer{
+    height: 20vh;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+footer p{
+    font-size: 0.6em;
+    font-weight: 600;
+    text-align: center;
+    
+}
+footer a:not(:last-child) {
+    margin-right: 1%;
+    
+}
+footer i{
+    font-size: 0.9em;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+footer i:hover{
+    color: var(--details-color);
+}
